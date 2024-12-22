@@ -1,0 +1,123 @@
+.header {
+  margin-bottom: 50px;
+  &-top {
+    padding: 24px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &-top__item {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: block;
+    margin-right: 70px;
+  }
+  &__logo-img {
+    width: 182px;
+    height: auto;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: block;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  &__link + &__link {
+    margin-left: 48px;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+  &__contact-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: visible;
+  }
+  &__contact-item + &__contact-item {
+    margin-left: 36px;
+  }
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+    strong {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+  &__contact-btn {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: right;
+    color: var(--color-primary);
+    padding: 3px 0px 3px 10px;
+  }
+  &-bottom .container {
+    display: flex;
+    align-items: center;
+  }
+  &__catalog {
+    position: relative;
+  }
+  &__catalog-btn {
+    display: flex;
+    align-items: center;
+  }
+  &__search {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 12px 0 18px;
+  }
+  &__search-input {
+    width: 100%;
+    padding: 17px 111px 17px 35px;
+    background-color: var(--color-gray);
+    font-size: 18px;
+    border-radius: 18px;
+  }
+  &__search-input::placeholder {
+    color: rgb(61, 70, 77);
+  }
+  &__search-btn {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    padding: 8px 30px;
+    background-color: var(--color-primary);
+    border-radius: 18px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__favorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    background-color: var(--color-gray);
+    padding: 16px;
+    border-radius: 18px;
+    svg {
+      width: 28px;
+      height: 24px;
+    }
+  }
+}

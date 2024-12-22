@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #165ded;
+  --color-black: #1d1f22;
+  --color-gray: #e9eef5;
+  --color-bg: #f5f9ff;
+  --color-text: #1e1e1e;
+  --section-margin-bottom: 50px;
+  --title-size: 36px;
+  --title-margin-bottom: 40px;
+}
