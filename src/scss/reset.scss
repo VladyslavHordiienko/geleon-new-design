@@ -104,7 +104,6 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .main {
@@ -119,6 +118,8 @@ html {
   margin: 0 auto;
 }
 .button {
+  font-size: 18px;
+  font-weight: 600;
   height: 56px;
   display: flex;
   align-items: center;
@@ -175,4 +176,70 @@ html {
   font-size: var(--title-size);
   font-weight: 600;
   margin-bottom: var(--title-margin-bottom);
+}
+.breadcrumbs {
+  margin-bottom: 20px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    @media (hover: hover) {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__item + &__item {
+    padding-left: 30px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      width: 16px;
+      height: 1px;
+      background-color: rgb(61, 70, 77);
+    }
+  }
+  &__text {
+    color: var(--color-text) !important;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      margin-right: 10px;
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__action + &__action {
+    margin-left: 36px;
+  }
+  &__copy,
+  &__favorite {
+    display: flex;
+    align-items: center;
+  }
+  &__copy:active svg,
+  &__favorite:active svg {
+    opacity: 0.6;
+  }
 }

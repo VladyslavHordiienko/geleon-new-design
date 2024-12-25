@@ -120,7 +120,6 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .main {
@@ -137,6 +136,8 @@ html {
 }
 
 .button {
+  font-size: 18px;
+  font-weight: 600;
   height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,4 +214,91 @@ html {
   font-size: var(--title-size);
   font-weight: 600;
   margin-bottom: var(--title-margin-bottom);
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.breadcrumbs .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.breadcrumbs__item {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (hover: hover) {
+  .breadcrumbs__item a:hover {
+    text-decoration: underline;
+  }
+}
+.breadcrumbs__item + .breadcrumbs__item {
+  padding-left: 30px;
+}
+.breadcrumbs__item + .breadcrumbs__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 16px;
+  height: 1px;
+  background-color: rgb(61, 70, 77);
+}
+.breadcrumbs__text {
+  color: var(--color-text) !important;
+}
+.breadcrumbs__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.breadcrumbs__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.breadcrumbs__action span {
+  display: block;
+  margin-right: 10px;
+}
+.breadcrumbs__action svg {
+  width: 24px;
+  height: 24px;
+}
+.breadcrumbs__action + .breadcrumbs__action {
+  margin-left: 36px;
+}
+.breadcrumbs__copy, .breadcrumbs__favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.breadcrumbs__copy:active svg, .breadcrumbs__favorite:active svg {
+  opacity: 0.6;
 }

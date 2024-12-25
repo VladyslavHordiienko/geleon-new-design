@@ -9,6 +9,7 @@ module.exports = function concatCss() {
     './assets/css/header.css',
     './assets/css/footer.css',
     './assets/css/home.css',
+    './assets/css/card.css',
   ];
   return src(source, { allowEmpty: true }).pipe(concat('main.css')).pipe(dest('./assets/css/'));
 };

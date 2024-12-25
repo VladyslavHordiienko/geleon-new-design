@@ -1,2 +1,121 @@
 .footer {
+  background-color: var(--color-black);
+  padding: 90px 0 60px 0;
+  color: #fff;
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+  &__menu + &__menu {
+    display: inline-block;
+    max-width: 508px;
+    margin-left: 150px;
+  }
+  &__title-inner {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  &__contact-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff !important;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    span {
+      display: block;
+      margin-left: 10px;
+    }
+  }
+  &__contact-link + &__contact-link {
+    margin-top: 20px;
+  }
+  &__nav {
+    display: inline-flex;
+    flex-direction: column;
+    a {
+      display: block;
+    }
+    a + a {
+      margin-top: 20px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+  }
+  &__questions {
+    margin-bottom: 20px;
+  }
+  &__form {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__input {
+    width: 100%;
+    padding: 16px 130px 16px 24px;
+    background-color: #d8dde3;
+    font-size: 18px;
+    border-radius: 10px;
+    ::placeholder {
+      color: #98a8b5;
+    }
+  }
+  &__btn {
+    height: 40px;
+    position: absolute;
+    padding: 7px 16px;
+    border-radius: 10px;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+  }
+  &__social-list {
+    display: flex;
+    align-items: center;
+  }
+  &__social-item {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    span {
+      display: block;
+      margin-left: 8px;
+    }
+  }
+  &__social-item + &__social-item {
+    margin-left: 24px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+  &__politic {
+    display: block;
+    font-size: 18px;
+    color: #fff !important;
+    text-decoration: underline;
+    margin-right: 20px;
+  }
+  @media (hover: hover) {
+    &__politic:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+  &__copyright {
+    font-size: 18px;
+    color: #3d464d;
+  }
 }
