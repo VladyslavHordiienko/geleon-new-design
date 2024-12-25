@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('./chunks/header.html')
+        <main class="main">
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__text">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__text">
+                                Клейкая лента
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__text">
+                                Упаковочная клейкая лента
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__head">
+                        <h1 class="title">
+                            Упаковочная клейкая лента
+                        </h1>
+                        <div class="catalog__qty">
+                            138 товаров
+                        </div>
+                    </div>
+                    <div class="catalog__tabs">
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                        <div class="catalog__tab">
+                            <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
+                            <span class="catalog__tab-name">
+                                Упаковочная
+                                клейкая лента
+                            </span>
+                        </div>
+                    </div>
+                    <div class="catalog__content">
+                        <div class="catalog__filter">
+                            <div class="catalog__filter-cell">
+                                <div class="catalog__field">
+                                    <div class="catalog__title-inner">
+                                        Наличие на складе
+                                    </div>
+
+                                    <fieldset class="catalog__fieldset">
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>Под заказ</p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>Готов к отправке</p>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="catalog__filter-cell">
+                                <div class="catalog__field">
+                                    <div class="catalog__title-inner">
+                                        Стоимость
+                                    </div>
+                                    <div class="range">
+                                        <input type="number" class="range__item">
+                                        <input type="number" class="range__item">
+                                    </div>
+
+                                    <fieldset class="catalog__fieldset">
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>Менее 1000 ₽<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>1001 - 3000<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>3001 - 6000<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>6001 - 9000<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>9001 - 20 000<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>20 001 и более<span>14</span></p>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="catalog__filter-cell">
+                                <div class="catalog__field">
+                                    <div class="catalog__title-inner">
+                                        Ширина, мм
+                                    </div>
+                                    <fieldset class="catalog__fieldset">
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>48<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>72<span>14</span></p>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                                <div class="catalog__field">
+                                    <div class="catalog__title-inner">
+                                        Длина, м
+                                    </div>
+                                    <fieldset class="catalog__fieldset">
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>60<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>120<span>14</span></p>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                                <div class="catalog__field">
+                                    <div class="catalog__title-inner">
+                                        Толщина, мкм
+                                    </div>
+                                    <fieldset class="catalog__fieldset">
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>40<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>45<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>50<span>14</span></p>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                                <div class="catalog__field">
+                                    <div class="catalog__title-inner">
+                                        Цвет
+                                    </div>
+                                    <fieldset class="catalog__fieldset">
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>белый<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>желтый<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>зеленый<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>коричневый<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>красный<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>белый<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>желтый<span>14</span></p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <p>зеленый<span>14</span></p>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__main">
+                            <div class="catalog__head-inner">
+                                <div class="catalog__sort">
+                                    <div class="catalog__sort-item">
+                                        <div class="catalog__sort-label">
+                                            Сортировка:
+                                        </div>
+                                        <div class="catalog__sort-dropdown">
+                                            <div class="catalof__sort-selected">
+                                                <span>сначала недорогие</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#specs-width"></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="catalog__sort-list">
+                                                <li class="catalog__sort-item">
+                                                    сначала недорогие
+                                                </li>
+                                                <li class="catalog__sort-item">
+                                                    сначала дорогие
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__sort-item">
+                                        <div class="catalog__sort-label">
+                                            Группировка:
+                                        </div>
+                                        <div class="catalog__sort-dropdown">
+                                            <div class="catalof__sort-selected">
+                                                <span>отсутствует</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#specs-width"></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="catalog__sort-list">
+                                                <li class="catalog__sort-item">
+                                                    отсутствует
+                                                </li>
+                                                <li class="catalog__sort-item">
+                                                    присутствует
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__selected-filters">
+                                    <ul class="catalog__selected-filters-list">
+                                        <li class="catalog__selected-filters-item">
+                                            <span>Под заказ</span>
+                                            <button class="catalog__selected-filters-remove"></button>
+                                        </li>
+                                        <li class="catalog__selected-filters-item">
+                                            <span>Менее 1000₽</span>
+                                            <button class="catalog__selected-filters-remove"></button>
+                                        </li>
+                                        <li class="catalog__selected-filters-item">
+                                            <span>48 мм</span>
+                                            <button class="catalog__selected-filters-remove"></button>
+                                        </li>
+                                        <li class="catalog__selected-filters-item">
+                                            <span>60 м</span>
+                                            <button class="catalog__selected-filters-remove"></button>
+                                        </li>
+                                        <li class="catalog__selected-filters-item">
+                                            <span>40 мкм</span>
+                                            <button class="catalog__selected-filters-remove"></button>
+                                        </li>
+                                        <li class="catalog__selected-filters-item">
+                                            <span>белый цвет</span>
+                                            <button class="catalog__selected-filters-remove"></button>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog__selected-filters-clear">
+                                        Очистить фильтры
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog__grid">
+                                <div class="product__cell">
+                                    <div class="product__badge">
+                                        Хит
+                                    </div>
+                                    <div class="product__hero swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="product__code">
+                                        Код товара: 5682
+                                    </div>
+                                    <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                        45 мкм</a>
+                                    <div class="card__price-block active">
+                                        <div class="card__price">
+                                            260 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            крупный опт
+                                        </div>
+                                    </div>
+                                    <div class="card__price-block">
+                                        <div class="card__price">
+                                            370 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            мелкий опт
+                                        </div>
+                                    </div>
+                                    <div class="card__price-action">
+                                        <div class="qty-counter">
+                                            <button class="qty-counter__oper">
+                                                -
+                                            </button>
+                                            <input type="number" class="qty-counter__input" value="6">
+                                            <button class="qty-counter__oper">
+                                                +
+                                            </button>
+                                        </div>
+                                        <button class="card__buy button">
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <div class="card__price-total">
+                                        Стоимость: <span>2 880 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('./chunks/footer.html')
+    </div>
+</body>
+@@include('./chunks/svgsprites.html')
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

@@ -1187,7 +1187,7 @@ html {
   margin-bottom: 20px;
 }
 .card__price-block ::before {
-  content: "";
+  content: '';
   width: 1px;
   height: 31px;
   position: absolute;
@@ -1337,7 +1337,11 @@ html {
   font-weight: 600;
 }
 
-.qte-counter {
+.recommend {
+  margin-bottom: var(--section-margin-bottom);
+}
+
+.qty-counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1348,7 +1352,7 @@ html {
   border-radius: 13px;
 }
 
-.qte-counter__oper {
+.qty-counter__oper {
   min-width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1363,12 +1367,12 @@ html {
   text-align: center;
 }
 @media (hover: hover) {
-  .qte-counter__oper:hover {
+  .qty-counter__oper:hover {
     color: var(--color-primary);
   }
 }
 
-.qte-counter__input {
+.qty-counter__input {
   width: calc(100% - 100px);
   font-size: 18px;
   font-weight: 600;
