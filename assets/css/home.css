@@ -90,6 +90,9 @@
   margin-bottom: 0;
   margin-right: 24px;
 }
+.hit__link {
+  color: #fff !important;
+}
 .hit__link svg {
   width: 12px;
   height: 12px;
@@ -152,6 +155,11 @@
 .product__oldprice {
   font-size: 22px;
   text-decoration-line: line-through;
+}
+.product__code {
+  font-size: 14px;
+  color: var(--color-primary);
+  margin-bottom: 4px;
 }
 .product__name {
   font-size: 18px;

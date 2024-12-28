@@ -267,7 +267,7 @@
   margin-bottom: 20px;
 }
 .card__price-block ::before {
-  content: '';
+  content: "";
   width: 1px;
   height: 31px;
   position: absolute;
@@ -430,6 +430,7 @@
   align-items: center;
   border: 1px solid var(--color-black);
   border-radius: 13px;
+  background-color: var(--color-gray);
 }
 
 .qty-counter__oper {

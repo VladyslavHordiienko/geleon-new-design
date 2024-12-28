@@ -1,0 +1,139 @@
+.cart {
+  &__cell {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--color-gray);
+    margin-bottom: 20px;
+  }
+  &__notice {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 36px;
+      height: 36px;
+      margin-right: 16px;
+    }
+  }
+  &__label {
+    font-size: 18px;
+    span {
+      color: var(--color-primary);
+    }
+  }
+  &__list {
+    max-height: 500px;
+    margin-bottom: 36px;
+    overflow-y: auto;
+  }
+  &__list::-webkit-scrollbar-button {
+    display: none !important;
+  }
+  &__list::-webkit-scrollbar {
+    background-color: #d8dde3;
+    width: 7px;
+    border-radius: 4px;
+  }
+
+  &__list::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+  }
+  &__product {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--color-gray);
+    display: flex;
+    align-items: flex-start;
+  }
+  &__product + &__product {
+    margin-top: 20px;
+  }
+  &__img {
+    width: auto;
+    height: 90px;
+    margin-right: 16px;
+  }
+  &__product-info {
+    flex: 1 1 auto;
+    > div:first-child {
+      margin-bottom: 10px;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__name {
+    width: 226px;
+    display: block;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text) !important;
+    @media (hover: hover) {
+      &:hover {
+        color: var(--color-primary) !important;
+      }
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+  }
+  &__remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__favorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &-popup {
+    .qty-counter {
+      margin-right: 15px;
+    }
+    .qty-counter__input {
+      width: 70px;
+      height: 43px;
+    }
+  }
+  &__price-small {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-left: auto;
+  }
+  &__popup-total {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(168, 177, 188);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__total {
+    margin-right: 16px;
+  }
+  &__total-price {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+}

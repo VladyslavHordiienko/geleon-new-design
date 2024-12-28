@@ -74,6 +74,9 @@
       margin-right: 24px;
     }
   }
+  &__link {
+    color: #fff !important;
+  }
   &__link svg {
     width: 12px;
     height: 12px;
@@ -134,7 +137,11 @@
     font-size: 22px;
     text-decoration-line: line-through;
   }
-
+  &__code {
+    font-size: 14px;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+  }
   &__name {
     font-size: 18px;
     display: block;

@@ -83,12 +83,12 @@
                     <use xlink:href="#love"></use>
                 </svg>
             </div>
-            <a href="#" class="header__cart button">
+            <button class="header__cart button">
                 <svg class="icon">
                     <use xlink:href="#basket"></use>
                 </svg>
                 <span>Корзина</span>
-            </a>
+            </button>
         </div>
     </div>
 </header>
@@ -125,62 +125,62 @@
                         </div>
                     </div>
                     <div class="catalog__tabs">
-                        <div class="catalog__tab">
+                        <a href="#" class="catalog__tab active">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
-                        <div class="catalog__tab">
+                        </a>
+                        <a href="#" class="catalog__tab">
                             <img src="./img/mini-product.png" alt="" class="catalog__tab-img">
                             <span class="catalog__tab-name">
                                 Упаковочная
                                 клейкая лента
                             </span>
-                        </div>
+                        </a>
                     </div>
                     <div class="catalog__content">
                         <div class="catalog__filter">
@@ -208,34 +208,41 @@
                                         Стоимость
                                     </div>
                                     <div class="range">
-                                        <input type="number" class="range__item">
-                                        <input type="number" class="range__item">
+                                        <div class="range__item">
+                                            <span>от</span>
+                                            <input type="number" class="range__input">
+                                        </div>
+                                        <div class="range__item">
+                                            <span>до</span>
+                                            <input type="number" class="range__input">
+                                        </div>
+
                                     </div>
 
                                     <fieldset class="catalog__fieldset">
                                         <label>
                                             <input type="checkbox">
-                                            <p>Менее 1000 ₽<span>14</span></p>
+                                            <p>Менее 1000 ₽<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>1001 - 3000<span>14</span></p>
+                                            <p>1001 - 3000<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>3001 - 6000<span>14</span></p>
+                                            <p>3001 - 6000<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>6001 - 9000<span>14</span></p>
+                                            <p>6001 - 9000<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>9001 - 20 000<span>14</span></p>
+                                            <p>9001 - 20 000<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>20 001 и более<span>14</span></p>
+                                            <p>20 001 и более<span>(14)</span></p>
                                         </label>
                                     </fieldset>
                                 </div>
@@ -248,11 +255,11 @@
                                     <fieldset class="catalog__fieldset">
                                         <label>
                                             <input type="checkbox">
-                                            <p>48<span>14</span></p>
+                                            <p>48<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>72<span>14</span></p>
+                                            <p>72<span>(14)</span></p>
                                         </label>
                                     </fieldset>
                                 </div>
@@ -263,11 +270,11 @@
                                     <fieldset class="catalog__fieldset">
                                         <label>
                                             <input type="checkbox">
-                                            <p>60<span>14</span></p>
+                                            <p>60<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>120<span>14</span></p>
+                                            <p>120<span>(14)</span></p>
                                         </label>
                                     </fieldset>
                                 </div>
@@ -278,15 +285,15 @@
                                     <fieldset class="catalog__fieldset">
                                         <label>
                                             <input type="checkbox">
-                                            <p>40<span>14</span></p>
+                                            <p>40<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>45<span>14</span></p>
+                                            <p>45<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>50<span>14</span></p>
+                                            <p>50<span>(14)</span></p>
                                         </label>
                                     </fieldset>
                                 </div>
@@ -297,35 +304,35 @@
                                     <fieldset class="catalog__fieldset">
                                         <label>
                                             <input type="checkbox">
-                                            <p>белый<span>14</span></p>
+                                            <p>белый<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>желтый<span>14</span></p>
+                                            <p>желтый<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>зеленый<span>14</span></p>
+                                            <p>зеленый<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>коричневый<span>14</span></p>
+                                            <p>коричневый<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>красный<span>14</span></p>
+                                            <p>красный<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>белый<span>14</span></p>
+                                            <p>белый<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>желтый<span>14</span></p>
+                                            <p>желтый<span>(14)</span></p>
                                         </label>
                                         <label>
                                             <input type="checkbox">
-                                            <p>зеленый<span>14</span></p>
+                                            <p>зеленый<span>(14)</span></p>
                                         </label>
                                     </fieldset>
                                 </div>
@@ -335,42 +342,42 @@
                             <div class="catalog__head-inner">
                                 <div class="catalog__sort">
                                     <div class="catalog__sort-item">
-                                        <div class="catalog__sort-label">
+                                        <div class="sort__name">
                                             Сортировка:
                                         </div>
-                                        <div class="catalog__sort-dropdown">
-                                            <div class="catalof__sort-selected">
+                                        <div class="sort__dropdown">
+                                            <div class="sort__selected">
                                                 <span>сначала недорогие</span>
                                                 <svg class="icon">
-                                                    <use xlink:href="#specs-width"></use>
+                                                    <use xlink:href="#simple-arrow"></use>
                                                 </svg>
                                             </div>
-                                            <ul class="catalog__sort-list">
-                                                <li class="catalog__sort-item">
+                                            <ul class="sort__list">
+                                                <li class="sort__item">
                                                     сначала недорогие
                                                 </li>
-                                                <li class="catalog__sort-item">
+                                                <li class="sort__item">
                                                     сначала дорогие
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="catalog__sort-item">
-                                        <div class="catalog__sort-label">
+                                        <div class="sort__name">
                                             Группировка:
                                         </div>
-                                        <div class="catalog__sort-dropdown">
-                                            <div class="catalof__sort-selected">
+                                        <div class="sort__dropdown">
+                                            <div class="sort__selected">
                                                 <span>отсутствует</span>
                                                 <svg class="icon">
-                                                    <use xlink:href="#specs-width"></use>
+                                                    <use xlink:href="#simple-arrow"></use>
                                                 </svg>
                                             </div>
-                                            <ul class="catalog__sort-list">
-                                                <li class="catalog__sort-item">
+                                            <ul class="sort__list">
+                                                <li class="sort__item">
                                                     отсутствует
                                                 </li>
-                                                <li class="catalog__sort-item">
+                                                <li class="sort__item">
                                                     присутствует
                                                 </li>
                                             </ul>
@@ -381,27 +388,39 @@
                                     <ul class="catalog__selected-filters-list">
                                         <li class="catalog__selected-filters-item">
                                             <span>Под заказ</span>
-                                            <button class="catalog__selected-filters-remove"></button>
+                                            <button class="catalog__selected-filters-remove"><svg class="icon">
+                                                    <use xlink:href="#cancel"></use>
+                                                </svg></button>
                                         </li>
                                         <li class="catalog__selected-filters-item">
                                             <span>Менее 1000₽</span>
-                                            <button class="catalog__selected-filters-remove"></button>
+                                            <button class="catalog__selected-filters-remove"><svg class="icon">
+                                                    <use xlink:href="#cancel"></use>
+                                                </svg></button>
                                         </li>
                                         <li class="catalog__selected-filters-item">
                                             <span>48 мм</span>
-                                            <button class="catalog__selected-filters-remove"></button>
+                                            <button class="catalog__selected-filters-remove"><svg class="icon">
+                                                    <use xlink:href="#cancel"></use>
+                                                </svg></button>
                                         </li>
                                         <li class="catalog__selected-filters-item">
                                             <span>60 м</span>
-                                            <button class="catalog__selected-filters-remove"></button>
+                                            <button class="catalog__selected-filters-remove"><svg class="icon">
+                                                    <use xlink:href="#cancel"></use>
+                                                </svg></button>
                                         </li>
                                         <li class="catalog__selected-filters-item">
                                             <span>40 мкм</span>
-                                            <button class="catalog__selected-filters-remove"></button>
+                                            <button class="catalog__selected-filters-remove"><svg class="icon">
+                                                    <use xlink:href="#cancel"></use>
+                                                </svg></button>
                                         </li>
                                         <li class="catalog__selected-filters-item">
                                             <span>белый цвет</span>
-                                            <button class="catalog__selected-filters-remove"></button>
+                                            <button class="catalog__selected-filters-remove"><svg class="icon">
+                                                    <use xlink:href="#cancel"></use>
+                                                </svg></button>
                                         </li>
                                     </ul>
                                     <button class="catalog__selected-filters-clear">
@@ -410,7 +429,7 @@
                                 </div>
                             </div>
                             <div class="catalog__grid">
-                                <div class="product__cell">
+                                <div class="catalog__cell product__cell">
                                     <div class="product__badge">
                                         Хит
                                     </div>
@@ -455,30 +474,378 @@
                                             мелкий опт
                                         </div>
                                     </div>
-                                    <div class="card__price-action">
-                                        <div class="qty-counter">
-                                            <button class="qty-counter__oper">
-                                                -
-                                            </button>
-                                            <input type="number" class="qty-counter__input" value="6">
-                                            <button class="qty-counter__oper">
-                                                +
+                                    <div class="catalog__cell-bottom">
+                                        <div class="card__price-action">
+                                            <div class="qty-counter">
+                                                <button class="qty-counter__oper">
+                                                    -
+                                                </button>
+                                                <input type="number" class="qty-counter__input" value="6">
+                                                <button class="qty-counter__oper">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <button class="button">
+                                                <svg class="icon">
+                                                    <use xlink:href="#basket-filled"></use>
+                                                </svg>
                                             </button>
                                         </div>
-                                        <button class="card__buy button">
-                                            В корзину
-                                        </button>
+                                        <div class="card__price-total">
+                                            Стоимость: <span>2 880 ₽</span>
+                                        </div>
                                     </div>
-                                    <div class="card__price-total">
-                                        Стоимость: <span>2 880 ₽</span>
+                                </div>
+                                <div class="catalog__cell product__cell">
+                                    <div class="product__badge">
+                                        Хит
+                                    </div>
+                                    <div class="product__hero swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="product__code">
+                                        Код товара: 5682
+                                    </div>
+                                    <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                        45 мкм</a>
+                                    <div class="card__price-block active">
+                                        <div class="card__price">
+                                            260 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            крупный опт
+                                        </div>
+                                    </div>
+                                    <div class="card__price-block">
+                                        <div class="card__price">
+                                            370 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            мелкий опт
+                                        </div>
+                                    </div>
+                                    <div class="catalog__cell-bottom">
+                                        <div class="card__price-action">
+                                            <div class="qty-counter">
+                                                <button class="qty-counter__oper">
+                                                    -
+                                                </button>
+                                                <input type="number" class="qty-counter__input" value="6">
+                                                <button class="qty-counter__oper">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <button class="button">
+                                                <svg class="icon">
+                                                    <use xlink:href="#basket-filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="card__price-total">
+                                            Стоимость: <span>2 880 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__cell product__cell">
+                                    <div class="product__badge">
+                                        Хит
+                                    </div>
+                                    <div class="product__hero swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="product__code">
+                                        Код товара: 5682
+                                    </div>
+                                    <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                        45 мкм</a>
+                                    <div class="card__price-block active">
+                                        <div class="card__price">
+                                            260 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            крупный опт
+                                        </div>
+                                    </div>
+                                    <div class="card__price-block">
+                                        <div class="card__price">
+                                            370 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            мелкий опт
+                                        </div>
+                                    </div>
+                                    <div class="catalog__cell-bottom">
+                                        <div class="card__price-action">
+                                            <div class="qty-counter">
+                                                <button class="qty-counter__oper">
+                                                    -
+                                                </button>
+                                                <input type="number" class="qty-counter__input" value="6">
+                                                <button class="qty-counter__oper">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <button class="button">
+                                                <svg class="icon">
+                                                    <use xlink:href="#basket-filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="card__price-total">
+                                            Стоимость: <span>2 880 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__cell product__cell">
+                                    <div class="product__badge">
+                                        Хит
+                                    </div>
+                                    <div class="product__hero swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="product__code">
+                                        Код товара: 5682
+                                    </div>
+                                    <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                        45 мкм</a>
+                                    <div class="card__price-block active">
+                                        <div class="card__price">
+                                            260 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            крупный опт
+                                        </div>
+                                    </div>
+                                    <div class="card__price-block">
+                                        <div class="card__price">
+                                            370 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            мелкий опт
+                                        </div>
+                                    </div>
+                                    <div class="catalog__cell-bottom">
+                                        <div class="card__price-action">
+                                            <div class="qty-counter">
+                                                <button class="qty-counter__oper">
+                                                    -
+                                                </button>
+                                                <input type="number" class="qty-counter__input" value="6">
+                                                <button class="qty-counter__oper">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <button class="button">
+                                                <svg class="icon">
+                                                    <use xlink:href="#basket-filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="card__price-total">
+                                            Стоимость: <span>2 880 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__cell product__cell">
+                                    <div class="product__badge">
+                                        Хит
+                                    </div>
+                                    <div class="product__hero swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/hit.png" alt="" class="product__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="product__code">
+                                        Код товара: 5682
+                                    </div>
+                                    <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                        45 мкм</a>
+                                    <div class="card__price-block active">
+                                        <div class="card__price">
+                                            260 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            крупный опт
+                                        </div>
+                                    </div>
+                                    <div class="card__price-block">
+                                        <div class="card__price">
+                                            370 ₽
+                                        </div>
+                                        <div class="card__price-text">
+                                            мелкий опт
+                                        </div>
+                                    </div>
+                                    <div class="catalog__cell-bottom">
+                                        <div class="card__price-action">
+                                            <div class="qty-counter">
+                                                <button class="qty-counter__oper">
+                                                    -
+                                                </button>
+                                                <input type="number" class="qty-counter__input" value="6">
+                                                <button class="qty-counter__oper">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <button class="button">
+                                                <svg class="icon">
+                                                    <use xlink:href="#basket-filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="card__price-total">
+                                            Стоимость: <span>2 880 ₽</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="pagination">
+                                <button class="pagination__arrow pagination__prev">
+                                    <svg class="icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="pagination__list">
+                                    <li class="pagination__item active">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#">3</a>
+                                    </li>
+                                </ul>
+                                <button class="pagination__arrow pagination__next">
+                                    <svg class="icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="catalog__description">
+                                <h2>
+                                    Купить упаковочный скотч в Санкт-Петербурге
+                                </h2>
+                                <p>
+                                    Упаковочные материалы предназначены для хранения и перевозки грузов. Основная
+                                    функция — сохранить внешний вид и свойства
+                                    товара во время его хранения, при транспортировке, в ходе реализации. Для каждого
+                                    вида груза упаковка подбирается
+                                    индивидуально, в зависимости от его от размера, формы и условий транспортировки.
+                                    Большой выбор упаковочной продукции
+                                    позволяет подобрать оптимальный вариант, исходя из особенностей товара, который
+                                    необходимо упаковывать. Для этого
+                                    следует понимать, какие разновидности изделий существуют, чем они отличаются и какие
+                                    задачи выполняют.
+                                </p>
+                                <p>
+                                    Упаковочный скотч: недорогой и универсальный материал
+                                    Клейкая лента для упаковки используется при фиксации и сборках упаковочного
+                                    материала в ходе подготовки продукции к
+                                    хранению или транспортировке. Скотч лента изготавливается из полипропиленового
+                                    материала, с клеевым покрытием, что
+                                    позволяет придать ей характеристики прочности.
+                                </p>
+                                <p>
+                                    Как выбрать упаковочный скотч и какие характеристики учесть
+                                    Износостойкая клейкая лента покрывается акриловым или каучуковым клеем, что влияет
+                                    на стоимость такого упаковочного
+                                    материала. В ассортименте производителя можно выбрать материалы с разной плотностью
+                                    (40 мкм, 45 мкм и 50 мкм).
+                                    Выбирая упаковочный скотч следует учесть такой параметр как ширина ленты, наиболее
+                                    популярными являются мотки по 48 мм и
+                                    50 мм. Для организации упаковочного процесса в оптимальном режиме используется
+                                    прозрачный и цветной скотч.
+                                </p>
+                                <h3>
+                                    Купить упаковочный скотч в Санкт-Петербурге
+                                </h3>
+                                <p>
+                                    Как выбрать упаковочный скотч и какие характеристики учесть
+                                    Износостойкая клейкая лента покрывается акриловым или каучуковым клеем, что влияет
+                                    на стоимость такого упаковочного
+                                    материала. В ассортименте производителя можно выбрать материалы с разной плотностью
+                                    (40 мкм, 45 мкм и 50 мкм).
+                                    Выбирая упаковочный скотч следует учесть такой параметр как ширина ленты, наиболее
+                                    популярными являются мотки по 48
+                                    мм и
+                                    50 мм. Для организации упаковочного процесса в оптимальном режиме используется
+                                    прозрачный и цветной скотч.
+                                </p>
+                            </div>
+                            <button class="catalog__description-btn more-less">
+                                Показать полностью
+                            </button>
                         </div>
                     </div>
                 </div>
             </section>
-
         </main>
         <footer class="footer">
     <div class="container">
@@ -582,6 +949,74 @@
         </div>
     </div>
 </footer>
+        <div class="popup cart-popup">
+            <div class="popup__body">
+                <div class="title">
+                    Корзина
+                </div>
+                <div class="popup__cell">
+                    <svg class="icon">
+                        <use xlink:href="#wallet"></use>
+                    </svg>
+                    <p class="popup__label">
+                        Внимание! Минимальная сумма заказа - <span>5 000 ₽</span>
+                    </p>
+                </div>
+                <div class="cart__list">
+                    <div class="cart__product">
+                        <img src="./img/hit.png" alt="" class="cart__img">
+                        <div class="cart__product-info">
+                            <div class="cart__row">
+                                <a href="#" class="cart__name">
+                                    Скотч полипропиленовый
+                                    двухсторонний 50мм*50м
+                                </a>
+                                <div class="cart__action">
+                                    <button class="cart__remove">
+                                        <svg class="icon">
+                                            <use xlink:href="#remove"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="cart__favorite">
+                                    <svg class="icon">
+                                        <use xlink:href="#love"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="cart__row">
+                                <div class="qty-counter">
+                                    <button class="qty-counter__oper">
+                                        -
+                                    </button>
+                                    <input type="number" class="qty-counter__input" value="6">
+                                    <button class="qty-counter__oper">
+                                        +
+                                    </button>
+                                </div>
+                                <div class="cart__price-small">
+                                    353.1 ₽/шт.
+                                </div>
+                                <div class="cart__price">
+                                    12 712 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__row">
+                    <div class="cart__total">
+                        <div class="cart__label">Итого:</div>
+                        <div class="cart__total-price">
+                            12 712 ₽
+                        </div>
+                    </div>
+                    <div class="cart__btn button">
+                        12 712 ₽
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <svg width="0" height="0" style="display: none;">
@@ -681,7 +1116,8 @@
         <defs></defs>
         <path id="Vector"
             d="M12.69 9.96C12.7 9.9 12.7 9.85 12.7 9.8L12.7 1.21C12.7 0.54 12.16 0 11.49 0C11.49 0 11.49 0 11.49 0L2.9 0C2.23 0 1.69 0.54 1.69 1.21C1.69 1.26 1.69 1.32 1.7 1.37C1.82 1.97 2.35 2.4 2.96 2.38L7.71 2.39C7.96 2.39 8.21 2.35 8.45 2.27L8.83 2.13L0.4 10.56C-0.06 10.99 -0.14 11.68 0.21 12.19C0.6 12.74 1.36 12.86 1.91 12.47C1.96 12.43 2.02 12.38 2.07 12.33L10.53 3.86L10.43 4.13C10.34 4.4 10.29 4.68 10.29 4.96L10.29 9.71C10.28 10.32 10.71 10.85 11.3 10.97C11.97 11.07 12.59 10.62 12.69 9.96Z"
-            fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"></path>
+            fill="currentColor">
+        </path>
     </symbol>
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 31.6953 31.6953" id="basket-filled">
@@ -981,6 +1417,35 @@
         </g>
     </symbol>
 
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 10 9.99951" id="cancel">
+        <defs></defs>
+        <path id="Vector"
+            d="M4.11 5L0.18 1.06C-0.07 0.82 -0.07 0.42 0.18 0.18C0.42 -0.07 0.82 -0.07 1.06 0.18L5 4.11L8.93 0.18C9.17 -0.07 9.57 -0.07 9.81 0.18C10.06 0.42 10.06 0.82 9.81 1.06L5.88 5L9.81 8.93C10.06 9.17 10.06 9.57 9.81 9.81C9.69 9.93 9.53 9.99 9.37 9.99C9.21 9.99 9.05 9.93 8.93 9.81L5 5.88L1.06 9.81C0.94 9.93 0.78 9.99 0.62 9.99C0.46 9.99 0.3 9.93 0.18 9.81C-0.07 9.57 -0.07 9.17 0.18 8.93L4.11 5Z"
+            fill="#165DED" fill-opacity="1.000000" fill-rule="nonzero"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 25 25" id="remove">
+        <defs>
+            <clipPath id="clip742_877">
+                <rect id="free-icon-delete-709518 1" rx="0.000000" width="24.000000" height="24.000000"
+                    transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"></rect>
+            </clipPath>
+        </defs>
+        <rect id="free-icon-delete-709518 1" rx="0.000000" width="24.000000" height="24.000000"
+            transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"></rect>
+        <g clip-path="url(#clip742_877)">
+            <path id="Vector"
+                d="M19.93 4.81L18.34 22.97L6.65 22.97L5.06 4.81L3.04 4.98L4.66 23.47C4.75 24.33 5.49 25 6.35 25L18.64 25C19.5 25 20.24 24.33 20.33 23.46L21.95 4.98L19.93 4.81Z"
+                fill="#A8B1BC" fill-opacity="1.000000" fill-rule="nonzero"></path>
+            <path id="Vector"
+                d="M16.21 0L8.78 0C7.85 0 7.09 0.75 7.09 1.68L7.09 4.89L9.12 4.89L9.12 2.02L15.87 2.02L15.87 4.89L17.9 4.89L17.9 1.68C17.9 0.75 17.14 0 16.21 0Z"
+                fill="#A8B1BC" fill-opacity="1.000000" fill-rule="nonzero"></path>
+            <path id="Vector"
+                d="M23.31 3.88L1.68 3.88C1.12 3.88 0.67 4.33 0.67 4.89C0.67 5.45 1.12 5.91 1.68 5.91L23.31 5.91C23.87 5.91 24.32 5.45 24.32 4.89C24.32 4.33 23.87 3.88 23.31 3.88Z"
+                fill="#A8B1BC" fill-opacity="1.000000" fill-rule="nonzero"></path>
+        </g>
+    </symbol>>
 </svg>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

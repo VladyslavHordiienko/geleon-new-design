@@ -95,6 +95,9 @@ html {
   color: var(--color-text);
   background: var(--color-bg);
 }
+body.hidden {
+  overflow: hidden;
+}
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,9 +115,9 @@ html {
   flex: 1 0 auto;
 }
 .container {
-  max-width: 1530px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1532px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 .button {
@@ -241,5 +244,119 @@ html {
   &__copy:active svg,
   &__favorite:active svg {
     opacity: 0.6;
+  }
+}
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &__item {
+    width: calc(50% - 3px);
+    position: relative;
+    span {
+      font-size: 15px;
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 12px 16px 12px 36px;
+    border: 0.5px solid rgb(30, 30, 30);
+    border-radius: 12px;
+    background-color: var(--color-gray);
+    font-size: 16px;
+  }
+}
+.sort {
+  &__name {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  &__dropdown {
+    position: relative;
+  }
+  &__selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span {
+      font-size: 18px;
+      margin-right: 6px;
+      color: var(--color-primary);
+    }
+    svg {
+      width: 10px;
+      height: 10px;
+      fill: var(--color-primary);
+      transform: rotate(90deg);
+    }
+  }
+  &__list {
+    min-width: 200px;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    z-index: 99;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: 0.4s linear;
+    opacity: 0;
+    visibility: hidden;
+    background: #ebefff;
+  }
+  &__dropdown.active &__list {
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 4px 24px 0 rgba(18, 42, 192, 0.06);
+  }
+  &__item {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__item + &__item {
+    padding-top: 0;
+  }
+}
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+  &__body {
+    width: 100%;
+    max-width: 768px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    margin: 16px;
+    border-radius: 33px;
+    padding: 20px 32px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title {
+      margin-bottom: 0;
+    }
+  }
+  &__cancel {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
