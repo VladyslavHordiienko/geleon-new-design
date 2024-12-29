@@ -129,7 +129,7 @@ body.hidden {
   justify-content: center;
   padding: 12px 24px;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #fff !important;
   border-radius: 18px;
   svg {
     width: 24px;
@@ -328,10 +328,14 @@ body.hidden {
   }
 }
 .popup {
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 99999;
+  &.active {
+    display: block;
+  }
   &__body {
     width: 100%;
     max-width: 768px;

@@ -771,16 +771,27 @@
         @@include('./chunks/footer.html')
         <div class="popup cart-popup">
             <div class="popup__body">
-                <div class="title">
-                    Корзина
+
+                <div class="popup__head">
+                    <div class="title">
+                        Корзина
+                    </div>
+                    <button class="popup__cancel">
+                        <svg class="icon">
+                            <use xlink:href="#cancel"></use>
+                        </svg>
+                    </button>
                 </div>
-                <div class="popup__cell">
-                    <svg class="icon">
-                        <use xlink:href="#wallet"></use>
-                    </svg>
-                    <p class="popup__label">
-                        Внимание! Минимальная сумма заказа - <span>5 000 ₽</span>
-                    </p>
+
+                <div class="cart__cell">
+                    <div class="cart__notice">
+                        <svg class="icon">
+                            <use xlink:href="#wallet"></use>
+                        </svg>
+                        <div class="cart__label">
+                            Внимание! Минимальная сумма заказа - <span>5 000 ₽</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cart__list">
                     <div class="cart__product">
@@ -797,12 +808,13 @@
                                             <use xlink:href="#remove"></use>
                                         </svg>
                                     </button>
+                                    <button class="cart__favorite">
+                                        <svg class="icon">
+                                            <use xlink:href="#love"></use>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <button class="cart__favorite">
-                                    <svg class="icon">
-                                        <use xlink:href="#love"></use>
-                                    </svg>
-                                </button>
+
                             </div>
                             <div class="cart__row">
                                 <div class="qty-counter">
@@ -814,8 +826,182 @@
                                         +
                                     </button>
                                 </div>
-                                <div class="cart__price-small">
-                                    353.1 ₽/шт.
+                                <div class="cart__price-info">
+                                    <div class="cart__price-small">
+                                        353.1 ₽/шт.
+                                    </div>
+                                </div>
+                                <div class="cart__price">
+                                    12 712 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <img src="./img/hit.png" alt="" class="cart__img">
+                        <div class="cart__product-info">
+                            <div class="cart__row">
+                                <a href="#" class="cart__name">
+                                    Скотч полипропиленовый
+                                    двухсторонний 50мм*50м
+                                </a>
+                                <div class="cart__action">
+                                    <button class="cart__remove">
+                                        <svg class="icon">
+                                            <use xlink:href="#remove"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="cart__favorite">
+                                        <svg class="icon">
+                                            <use xlink:href="#love"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="cart__row">
+                                <div class="qty-counter">
+                                    <button class="qty-counter__oper">
+                                        -
+                                    </button>
+                                    <input type="number" class="qty-counter__input" value="6">
+                                    <button class="qty-counter__oper">
+                                        +
+                                    </button>
+                                </div>
+                                <div class="cart__price-info">
+                                    <div class="cart__price-small">
+                                        353.1 ₽/шт.
+                                    </div>
+                                </div>
+                                <div class="cart__price">
+                                    12 712 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <img src="./img/hit.png" alt="" class="cart__img">
+                        <div class="cart__product-info">
+                            <div class="cart__row">
+                                <a href="#" class="cart__name">
+                                    Скотч полипропиленовый
+                                    двухсторонний 50мм*50м
+                                </a>
+                                <div class="cart__action">
+                                    <button class="cart__remove">
+                                        <svg class="icon">
+                                            <use xlink:href="#remove"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="cart__favorite">
+                                        <svg class="icon">
+                                            <use xlink:href="#love"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="cart__row">
+                                <div class="qty-counter">
+                                    <button class="qty-counter__oper">
+                                        -
+                                    </button>
+                                    <input type="number" class="qty-counter__input" value="6">
+                                    <button class="qty-counter__oper">
+                                        +
+                                    </button>
+                                </div>
+                                <div class="cart__price-info">
+                                    <div class="cart__price-small">
+                                        353.1 ₽/шт.
+                                    </div>
+                                </div>
+                                <div class="cart__price">
+                                    12 712 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <img src="./img/hit.png" alt="" class="cart__img">
+                        <div class="cart__product-info">
+                            <div class="cart__row">
+                                <a href="#" class="cart__name">
+                                    Скотч полипропиленовый
+                                    двухсторонний 50мм*50м
+                                </a>
+                                <div class="cart__action">
+                                    <button class="cart__remove">
+                                        <svg class="icon">
+                                            <use xlink:href="#remove"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="cart__favorite">
+                                        <svg class="icon">
+                                            <use xlink:href="#love"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="cart__row">
+                                <div class="qty-counter">
+                                    <button class="qty-counter__oper">
+                                        -
+                                    </button>
+                                    <input type="number" class="qty-counter__input" value="6">
+                                    <button class="qty-counter__oper">
+                                        +
+                                    </button>
+                                </div>
+                                <div class="cart__price-info">
+                                    <div class="cart__price-small">
+                                        353.1 ₽/шт.
+                                    </div>
+                                </div>
+                                <div class="cart__price">
+                                    12 712 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <img src="./img/hit.png" alt="" class="cart__img">
+                        <div class="cart__product-info">
+                            <div class="cart__row">
+                                <a href="#" class="cart__name">
+                                    Скотч полипропиленовый
+                                    двухсторонний 50мм*50м
+                                </a>
+                                <div class="cart__action">
+                                    <button class="cart__remove">
+                                        <svg class="icon">
+                                            <use xlink:href="#remove"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="cart__favorite">
+                                        <svg class="icon">
+                                            <use xlink:href="#love"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="cart__row">
+                                <div class="qty-counter">
+                                    <button class="qty-counter__oper">
+                                        -
+                                    </button>
+                                    <input type="number" class="qty-counter__input" value="6">
+                                    <button class="qty-counter__oper">
+                                        +
+                                    </button>
+                                </div>
+                                <div class="cart__price-info">
+                                    <div class="cart__price-small">
+                                        353.1 ₽/шт.
+                                    </div>
                                 </div>
                                 <div class="cart__price">
                                     12 712 ₽
@@ -824,16 +1010,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="cart__row">
+                <div class="cart__popup-total">
                     <div class="cart__total">
                         <div class="cart__label">Итого:</div>
                         <div class="cart__total-price">
                             12 712 ₽
                         </div>
                     </div>
-                    <div class="cart__btn button">
-                        12 712 ₽
-                    </div>
+                    <a href="#" class="cart__btn button">
+                        Перейти в корзину
+                    </a>
                 </div>
             </div>
         </div>

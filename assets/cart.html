@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -437,792 +437,427 @@
     </div>
 </header>
         <main class="main">
-            <section class="breadcrumbs">
+            <section class="cart">
                 <div class="container">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__text">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__text">
-                                Клейкая лента
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__text">
-                                Упаковочная клейкая лента
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__text">
-                                Скотч упаковочный 48мм*60м, 45мкм, прозрачный
-                            </span>
-                        </li>
-                    </ul>
-                    <div class="breadcrumbs__info">
-                        <div class="breadcrumbs__action">
-                            <button class="breadcrumbs__print" onclick="window.print();">
-                                <svg class="icon">
-                                    <use xlink:href="#printer"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="breadcrumbs__action">
-                            <button class="breadcrumbs__copy" data-articul="294422"
-                                onclick="navigator.clipboard.writeText(this.dataset.articul);">
-                                <span>Артикул: 294422</span>
-                                <svg class="icon">
-                                    <use xlink:href="#copy"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="breadcrumbs__action">
-                            <button class="breadcrumbs__favorite">
-                                <span>
-                                    Добавить в избранное
-                                </span>
-                                <svg class="icon">
-                                    <use xlink:href="#love"></use>
-                                </svg>
-                            </button>
+                    <div class="cart__head">
+                        <h1 class="title">
+                            Корзина
+                        </h1>
+                        <div class="cart__qty">
+                            36 товаров
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="card">
-                <div class="container">
-                    <h1 class="title">
-                        Скотч упаковочный 48мм*60м, 45 мкм, прозрачный
-                    </h1>
-                    <div class="card__content">
-                        <div class="card__hero">
-                            <div class="card__main">
-                                <div class="card__sliders">
-                                    <div class="card__pagination-thumb">
-                                        <div class="card__pagination-slider swiper">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="./img/mini-product.png" alt="">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./img/mini-product.png" alt="">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./img/mini-product.png" alt="">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./img/mini-product.png" alt="">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="./img/mini-product.png" alt="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                    </div>
-
-                                    <div class="card__main-slider swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <img src="./img/card-img.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/card-img.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/card-img.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/card-img.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/card-img.png" alt="">
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img src="./img/card-img.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__specs">
-                                    <div class="card__title-inner">
-                                        Основные характеристики
-                                    </div>
-                                    <ul class="card__specs-list">
-                                        <li class="card__specs-item">
-                                            Ширина: 48 мм
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Длина: 60 м
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Толщина: 45 мкм
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Укладка: 72 шт
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Цвет: прозрачный
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Основа: полипропиленовая
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Тип клея: акриловая эмульсия на водной основе
-                                        </li>
-                                        <li class="card__specs-item">
-                                            Температура применения: от -5 до +70 °С
-                                        </li>
-                                    </ul>
-                                    <a href="#" class="card__link">
-                                        <span>
-                                            Все характеристики
-                                        </span>
-                                        <svg class="icon">
-                                            <use xlink:href="#simple-arrow"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card__frame">
-                                <div class="card__frame-title">
-                                    <span>Изготовим под заказ</span> другие размеры упаковочного
-                                    скотча в короткие сроки:
-                                </div>
-                                <div class="card__frame-specs">
-                                    <div class="card__frame-spec">
-                                        <div class="card__frame-icon">
-                                            <svg class="icon">
-                                                <use xlink:href="#specs-width"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="card__frame-text">
-                                            <div>Толщина:</div>
-                                            <div>40-50 мкм</div>
-                                        </div>
-                                    </div>
-                                    <div class="card__frame-spec">
-                                        <div class="card__frame-icon">
-                                            <svg class="icon">
-                                                <use xlink:href="#specs-length"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="card__frame-text">
-                                            <div>Длина:</div>
-                                            <div>5 - 990 м</div>
-                                        </div>
-                                    </div>
-                                    <div class="card__frame-spec">
-                                        <div class="card__frame-icon">
-                                            <svg class="icon">
-                                                <use xlink:href="#specs-wide"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="card__frame-text">
-                                            <div>Ширина:</div>
-                                            <div>9 - 1584 мм</div>
-                                        </div>
-                                    </div>
-                                    <div class="card__frame-spec">
-                                        <div class="card__frame-icon">
-                                            <svg class="icon">
-                                                <use xlink:href="#specs-weight"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="card__frame-text">
-                                            <div>Вес:</div>
-                                            <div>1234 гр</div>
-                                        </div>
-                                    </div>
-                                    <div class="card__frame-spec">
-                                        <div class="card__frame-icon">
-                                            <svg class="icon">
-                                                <use xlink:href="#specs-diametr"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="card__frame-text">
-                                            <div>Диаметр:</div>
-                                            <div>1234 см</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card__frame-brn button">
-                                    Заказать
-                                </div>
-                            </div>
-                            <div class="card__description">
-                                <div class="card__tabs">
-                                    <div class="card__tab active">
-                                        Описание
-                                    </div>
-                                    <div class="card__tab">
-                                        Как купить
-                                    </div>
-                                    <div class="card__tab">
-                                        Оплата
-                                    </div>
-                                    <div class="card__tab">
-                                        Доставка
-                                    </div>
-                                </div>
-                                <div class="card__tabs-content">
-                                    <div class="card__tab-text active">
-                                        Упаковочный скотч на полипропиленовой основе плотностью 45 мкм, прозрачный.
-                                        Длина намотки - 60 метров. Предназначен для
-                                        упаковки тяжёлых и объёмных грузов,
-                                        не теряет свойств на открытом воздухе при температуре от -5 до 70°С. Для больших
-                                        объемов упаковки и удобства можно
-                                        применять с <a href="#">диспенсером</a>.
-                                    </div>
-                                    <div class="card__tab-text">
-                                        Как купить
-                                    </div>
-                                    <div class="card__tab-text">
-                                        Оплата
-                                    </div>
-                                    <div class="card__tab-text">
-                                        Доставка
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card__info">
-                            <div class="card__cell">
-                                <div class="card__price-block active">
-                                    <div class="card__price">
-                                        260 ₽
-                                    </div>
-                                    <div class="card__price-text">
-                                        крупный опт
-                                    </div>
-                                </div>
-                                <div class="card__price-block">
-                                    <div class="card__price">
-                                        370 ₽
-                                    </div>
-                                    <div class="card__price-text">
-                                        мелкий опт
-                                    </div>
-                                </div>
-                                <div class="card__price-action">
-                                    <div class="qty-counter">
-                                        <button class="qty-counter__oper">
-                                            -
-                                        </button>
-                                        <input type="number" class="qty-counter__input" value="6">
-                                        <button class="qty-counter__oper">
-                                            +
-                                        </button>
-                                    </div>
-                                    <button class="card__buy button">
-                                        В корзину
-                                    </button>
-                                </div>
-                                <div class="card__price-text">
-                                    Минимальный заказ от 6 шт
-                                </div>
-                                <div class="card__price-total">
-                                    Стоимость: <span>2 880 ₽</span>
-                                </div>
-                            </div>
-                            <div class="card__cell">
-                                <button class="card__price-check button">
-                                    Уточнить стоимость
-                                </button>
-                            </div>
-                            <div class="card__cell">
-                                <div class="card__title-inner">
-                                    Оплата
-                                </div>
-                                <div class="card__paymment">
+                    <div class="cart__content">
+                        <div class="cart__main">
+                            <div class="cart__cell">
+                                <div class="cart__notice">
                                     <svg class="icon">
                                         <use xlink:href="#wallet"></use>
                                     </svg>
-                                    <span>
-                                        Внимание! Минимальная
-                                        сумма счета <strong>5 000 ₽</strong>
-                                        на товар в наличии.
-                                    </span>
+                                    <div class="cart__label">
+                                        Внимание! Минимальная сумма заказа - <span>5 000 ₽</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card__cell">
-                                <div class="card__title-inner">
-                                    Доставка
-                                </div>
-                                <div class="card__delivery">
-                                    <div class="card__delivery-item">
-                                        <div class="card__delivery-text">
-                                            <svg class="icon">
-                                                <use xlink:href="#location"></use>
-                                            </svg>
-                                            <div class="card__delivery-name">
-                                                <strong>Самовывоз</strong>
-                                                <span>г. Гатчина</span>
+                            <div class="cart__list">
+                                <div class="cart__product">
+                                    <img src="./img/hit.png" alt="" class="cart__img">
+                                    <div class="cart__product-info">
+                                        <div class="cart__row">
+                                            <a href="#" class="cart__name">
+                                                Скотч полипропиленовый
+                                                двухсторонний 50мм*50м
+                                            </a>
+                                            <div class="cart__action">
+                                                <button class="cart__remove">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#remove"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="cart__favorite">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#love"></use>
+                                                    </svg>
+                                                </button>
                                             </div>
-                                        </div>
-                                        <div class="card__delivery-value">Бесплатно</div>
-                                    </div>
-                                    <div class="card__delivery-item">
-                                        <div class="card__delivery-text">
-                                            <svg class="icon">
-                                                <use xlink:href="#delivery"></use>
-                                            </svg>
-                                            <div class="card__delivery-name">
-                                                <strong>Доставка по СПб</strong>
-                                                <span>при заказе от 25 000 ₽</span>
-                                            </div>
-                                        </div>
-                                        <div class="card__delivery-value">Бесплатно</div>
-                                    </div>
-                                    <div class="card__delivery-item">
-                                        <div class="card__delivery-text">
-                                            <svg class="icon">
-                                                <use xlink:href="#delivery"></use>
-                                            </svg>
-                                            <div class="card__delivery-name">
-                                                <strong>Платная доставка по СПб</strong>
-                                                <span>при заказе от 15 000 ₽</span>
-                                            </div>
-                                        </div>
-                                        <div class="card__delivery-value">от 1500 ₽</div>
-                                    </div>
-                                </div>
-                                <a href="#" class="card__link">
-                                    <span>
-                                        Подробнее о доставке
-                                    </span>
-                                    <svg class="icon">
-                                        <use xlink:href="#simple-arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="recommend">
-                <div class="container">
-                    <div class="title">
-                        Рекомендуемые товары
-                    </div>
-                    <div class="recommend__products swiper">
-                        <div class="recommend__grid product__grid">
-                            <div class="product__cell swiper-slide">
-                                <div class="product__badge">
-                                    -30%
-                                </div>
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__badge">
-                                    -10%
-                                </div>
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__badge">
-                                    Хит
-                                </div>
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="recently">
-                <div class="container">
-                    <div class="title">
-                        Недавно просмотренные
-                    </div>
-                    <div class="recently__products swiper">
-                        <div class="recently__grid product__grid">
-                            <div class="product__cell swiper-slide">
-                                <div class="product__badge">
-                                    -30%
-                                </div>
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
-                            </div>
-                            <div class="product__cell swiper-slide">
 
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
+                                        <div class="cart__row">
+                                            <div class="qty-counter">
+                                                <button class="qty-counter__oper">
+                                                    -
+                                                </button>
+                                                <input type="number" class="qty-counter__input" value="6">
+                                                <button class="qty-counter__oper">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <div class="cart__price-info">
+                                                <div class="cart__price-small">
+                                                    353.1 ₽/шт.
+                                                </div>
+                                                <div class="cart__price-caption">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#information"></use>
+                                                    </svg>
+                                                    <span>Доступен под заказ</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart__price">
+                                                12 712 ₽
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
+
                             </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
+
+                            <form class="cart__form">
+                                <div class="title">
+                                    Оформление заказа
                                 </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
+                                <div class="cart__form-box">
+                                    <div class="cart__inputs">
+                                        <div class="cart__input-wrap">
+                                            <input type="text" placeholder="Получатель" class="cart__input">
+                                            <span>Заполните это поле</span>
+                                        </div>
+                                        <div class="cart__input-wrap">
+                                            <input type="text" placeholder="Телефон" class="cart__input">
+                                            <span>Заполните это поле</span>
+                                        </div>
+
+                                        <div class="cart__input-wrap">
+                                            <input type="text" placeholder="Email" class="cart__input">
+                                            <span>Заполните это поле</span>
+                                        </div>
                                     </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
+                                    <textarea class="cart__textarea" placeholder="Комментарий к заказу"></textarea>
+                                    <div class="cart__form-text">Прикрепите реквизиты компании</div>
+                                    <div class="cart__form-file">
+                                        <label>
+                                            <input type="file">
+                                        </label>
+                                        <div class="cart__form-file-box">
+                                            Переместите файлы или нажмите, чтобы загрузить
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
+                                <div class="title">
+                                    Способ доставки
+                                </div>
+                                <div class="cart__form-box">
+                                    <input type="radio" name="delivery" value="1" id="delivery_1" data-payments="[1]"
+                                        data-delivprice="0" data-delivcost="0" checked="">
+                                    <label class="cart__delivery" for="delivery_1">
+                                        <div class="cart__delivery-icon --active">
+                                            <div class="check">
+                                                <svg class="icon check-icon">
+                                                    <use xlink:href="assets/css/icons.svg#check"></use>
+                                                </svg>
+                                            </div>
+                                            <svg class="icon delivery-icon">
+                                                <use xlink:href="assets/css/icons.svg#delivery"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="cart__delivery-textbox">
+                                            <div class="cart__delivery-name">
+                                                Самовывоз со склада </div>
+                                            <div class="cart__delivety-text">
+                                                Со склада в г. Гатчина ул. 7 Армии, д. 10В </div>
+                                        </div>
+                                        <div class="cart__delivery-price">
+                                            Бесплатно
+                                        </div>
+                                    </label>
+                                    <input type="radio" name="delivery" value="2" id="delivery_2" data-payments="[1]"
+                                        data-delivprice="0" data-delivcost="25000">
+                                    <label class="cart__delivery" for="delivery_2">
+                                        <div class="cart__delivery-icon ">
+                                            <div class="check">
+                                                <svg class="icon check-icon">
+                                                    <use xlink:href="assets/css/icons.svg#check"></use>
+                                                </svg>
+                                            </div>
+                                            <svg class="icon delivery-icon">
+                                                <use xlink:href="assets/css/icons.svg#delivery"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="cart__delivery-textbox">
+                                            <div class="cart__delivery-name">
+                                                Доставка по СПБ </div>
+                                            <div class="cart__delivety-text">
+                                                Бесплатная доставка при заказе от 25 000₽. При заказе до 25 000₽
+                                                доставка платная. </div>
+                                        </div>
+                                        <div class="cart__delivery-price">
+                                            Бесплатно
+                                        </div>
+                                    </label>
+                                    <input type="radio" name="delivery" value="3" id="delivery_3" data-payments="[1]"
+                                        data-delivprice="0" data-delivcost="25000">
+                                    <label class="cart__delivery" for="delivery_3">
+                                        <div class="cart__delivery-icon ">
+                                            <div class="check">
+                                                <svg class="icon check-icon">
+                                                    <use xlink:href="assets/css/icons.svg#check"></use>
+                                                </svg>
+                                            </div>
+                                            <svg class="icon delivery-icon">
+                                                <use xlink:href="assets/css/icons.svg#delivery"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="cart__delivery-textbox">
+                                            <div class="cart__delivery-name">
+                                                Доставка в регионы </div>
+                                            <div class="cart__delivety-text">
+                                                Бесплатная доставка до ТК в СПб при заказе от 25 000₽. </div>
+                                        </div>
+                                        <div class="cart__delivery-price">
+                                            Бесплатно
+                                        </div>
+                                    </label>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="cart__receipt">
+                            <div class="cart__title-inner">Информация о заказе</div>
+                            <div class="cart__info">
+                                <div class="cart__info-row">
+                                    <div class="cart__text">Скотч полипропиленовый
+                                        двухсторонний 50мм*50м</div>
+                                    <div class="cart__price-inner">12 712 ₽</div>
+                                </div>
+                                <div class="cart__info-row">
+                                    <div class="cart__text">Стоимость доставки</div>
+                                    <div class="cart__price-inner">От 1 500 ₽</div>
+                                </div>
                             </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__badge">
-                                    -10%
+                            <div class="cart__total">
+                                <div class="cart__label">Итого:</div>
+                                <div class="cart__total-price">
+                                    12 712 ₽
                                 </div>
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
                             </div>
-                            <div class="product__cell swiper-slide">
-                                <div class="product__badge">
-                                    Хит
-                                </div>
-                                <div class="product__hero swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./img/hit.png" alt="" class="product__img">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <div class="product__price-wrap">
-                                    <div class="product__price">
-                                        36 ₽
-                                    </div>
-                                    <div class="product__oldprice">
-                                        59 ₽
-                                    </div>
-                                </div>
-                                <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
-                                    45 мкм</a>
-                                <button class="button --small">
-                                    <svg class="icon">
-                                        <use xlink:href="#basket-filled"></use>
-                                    </svg>
-                                    <span>В корзину</span>
-                                </button>
+                            <a href="#" class="cart__btn button">
+                                Оформить заказ
+                            </a>
+                            <div class="cart__caption">
+                                Оформить заказ
                             </div>
                         </div>
                     </div>
+                    <section class="recommend">
+                        <div class="container">
+                            <div class="title">
+                                Рекомендуемые товары
+                            </div>
+                            <div class="recommend__products swiper">
+                                <div class="recommend__grid product__grid">
+                                    <div class="product__cell swiper-slide">
+                                        <div class="product__badge">
+                                            -30%
+                                        </div>
+                                        <div class="product__hero swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                36 ₽
+                                            </div>
+                                            <div class="product__oldprice">
+                                                59 ₽
+                                            </div>
+                                        </div>
+                                        <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                            45 мкм</a>
+                                        <button class="button --small">
+                                            <svg class="icon">
+                                                <use xlink:href="#basket-filled"></use>
+                                            </svg>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                    <div class="product__cell swiper-slide">
+                                        <div class="product__hero swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                36 ₽
+                                            </div>
+                                            <div class="product__oldprice">
+                                                59 ₽
+                                            </div>
+                                        </div>
+                                        <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                            45 мкм</a>
+                                        <button class="button --small">
+                                            <svg class="icon">
+                                                <use xlink:href="#basket-filled"></use>
+                                            </svg>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                    <div class="product__cell swiper-slide">
+                                        <div class="product__hero swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                36 ₽
+                                            </div>
+                                            <div class="product__oldprice">
+                                                59 ₽
+                                            </div>
+                                        </div>
+                                        <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                            45 мкм</a>
+                                        <button class="button --small">
+                                            <svg class="icon">
+                                                <use xlink:href="#basket-filled"></use>
+                                            </svg>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                    <div class="product__cell swiper-slide">
+                                        <div class="product__badge">
+                                            -10%
+                                        </div>
+                                        <div class="product__hero swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                36 ₽
+                                            </div>
+                                            <div class="product__oldprice">
+                                                59 ₽
+                                            </div>
+                                        </div>
+                                        <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                            45 мкм</a>
+                                        <button class="button --small">
+                                            <svg class="icon">
+                                                <use xlink:href="#basket-filled"></use>
+                                            </svg>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                    <div class="product__cell swiper-slide">
+                                        <div class="product__badge">
+                                            Хит
+                                        </div>
+                                        <div class="product__hero swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./img/hit.png" alt="" class="product__img">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                36 ₽
+                                            </div>
+                                            <div class="product__oldprice">
+                                                59 ₽
+                                            </div>
+                                        </div>
+                                        <a href="#" class="product__name">Скотч упаковочный 48мм*60м,
+                                            45 мкм</a>
+                                        <button class="button --small">
+                                            <svg class="icon">
+                                                <use xlink:href="#basket-filled"></use>
+                                            </svg>
+                                            <span>В корзину</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
         </main>

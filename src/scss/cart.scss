@@ -100,7 +100,8 @@
       height: 24px;
     }
   }
-  &-popup {
+  &-popup,
+  &__main {
     .qty-counter {
       margin-right: 15px;
     }
@@ -109,10 +110,28 @@
       height: 43px;
     }
   }
+  &__price-info {
+    display: flex;
+    align-items: center;
+  }
   &__price-small {
     font-size: 18px;
     font-weight: 600;
     color: var(--color-primary);
+  }
+  &__price-caption {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+    span {
+      display: block;
+      margin-left: 8px;
+      font-size: 18px;
+    }
   }
   &__price {
     font-size: 24px;

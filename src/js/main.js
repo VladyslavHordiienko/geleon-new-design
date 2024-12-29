@@ -110,4 +110,11 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.more-less').click(function () {
     $(this).prev().toggleClass('active');
   });
+  // Popups
+  $('.popup__cancel').click(function () {
+    $(this).closest('.popup').fadeOut('slow');
+  });
+  $('.header__cart').click(function () {
+    $('.cart-popup').fadeIn('slow');
+  });
 });

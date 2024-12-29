@@ -188,7 +188,7 @@ body.hidden {
   justify-content: center;
   padding: 12px 24px;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #fff !important;
   border-radius: 18px;
 }
 .button svg {
@@ -439,10 +439,14 @@ body.hidden {
 }
 
 .popup {
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 99999;
+}
+.popup.active {
+  display: block;
 }
 .popup__body {
   width: 100%;
@@ -594,6 +598,120 @@ body.hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.header__catalog-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 5;
+  padding: 30px 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 33px;
+}
+.header__catalog-list {
+  min-width: 300px;
+}
+.header__catalog-list > li {
+  line-height: 1.5;
+  padding: 0 30px;
+}
+.header__catalog-list > li + li {
+  margin-top: 10px;
+}
+.header__catalog-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--color-text) !important;
+}
+.header__catalog-label svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.header__catalog-label span {
+  display: block;
+  font-size: 18px;
+  margin-top: 4px;
+}
+.header__submenu {
+  min-width: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(100% - 33px);
+  padding: 30px 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 0 33px 33px 0;
+}
+.header__submenu > li {
+  line-height: 1.6;
+  padding: 0 30px;
+}
+.header__submenu > li + li {
+  margin-top: 10px;
+}
+.header__submenu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: var(--color-text) !important;
+}
+.header__submenu-link span {
+  display: block;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.header__submenu-link svg {
+  width: 10px;
+  height: 10px;
+}
+@media (hover: hover) {
+  .header__catalog:hover .header__catalog-wrapper {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__catalog-label:hover {
+    color: var(--color-primary) !important;
+  }
+  .header__catalog-list > li:hover .header__submenu {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__submenu-link:hover {
+    color: var(--color-primary) !important;
+  }
 }
 .header__search {
   position: relative;
@@ -2122,17 +2240,43 @@ body.hidden {
   width: 24px;
   height: 24px;
 }
-.cart-popup .qty-counter {
+.cart-popup .qty-counter, .cart__main .qty-counter {
   margin-right: 15px;
 }
-.cart-popup .qty-counter__input {
+.cart-popup .qty-counter__input, .cart__main .qty-counter__input {
   width: 70px;
   height: 43px;
+}
+.cart__price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .cart__price-small {
   font-size: 18px;
   font-weight: 600;
   color: var(--color-primary);
+}
+.cart__price-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.cart__price-caption svg {
+  width: 18px;
+  height: 18px;
+}
+.cart__price-caption span {
+  display: block;
+  margin-left: 8px;
+  font-size: 18px;
 }
 .cart__price {
   font-size: 24px;

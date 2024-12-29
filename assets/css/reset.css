@@ -154,7 +154,7 @@ body.hidden {
   justify-content: center;
   padding: 12px 24px;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #fff !important;
   border-radius: 18px;
 }
 .button svg {
@@ -405,10 +405,14 @@ body.hidden {
 }
 
 .popup {
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 99999;
+}
+.popup.active {
+  display: block;
 }
 .popup__body {
   width: 100%;
