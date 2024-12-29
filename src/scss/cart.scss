@@ -1,4 +1,32 @@
 .cart {
+  margin-bottom: var(--section-margin-bottom);
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--title-margin-bottom);
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+  &__qty {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--color-primary);
+    margin-top: 7px;
+    margin-left: 20px;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__main {
+    width: calc(100% - 440px);
+    margin-right: 24px;
+  }
+  &__receipt {
+    width: 440px;
+  }
   &__cell {
     padding: 24px;
     border-radius: 24px;
@@ -20,10 +48,14 @@
       color: var(--color-primary);
     }
   }
+
   &__list {
     max-height: 500px;
     margin-bottom: 36px;
     overflow-y: auto;
+  }
+  &__main &__list {
+    max-height: unset;
   }
   &__list::-webkit-scrollbar-button {
     display: none !important;
@@ -155,4 +187,188 @@
     font-weight: 600;
     color: var(--color-primary);
   }
+  &__form-box {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--color-gray);
+    margin-bottom: 20px;
+  }
+  &__form-delivery {
+    margin-bottom: 0;
+  }
+  &__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  &__input-wrap {
+    width: calc(100% / 3);
+    position: relative;
+    padding-bottom: 26px;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid rgb(193, 201, 212);
+    border-radius: 15px;
+    background: rgb(245, 249, 255);
+    padding: 16px;
+    font-size: 16px;
+    & + span {
+      display: none;
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+    }
+  }
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgb(193, 201, 212);
+    border-radius: 20px;
+    background: rgb(245, 249, 255);
+    padding: 24px 18px;
+    font-size: 16px;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+  &__form-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  &__form-file {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    padding-left: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-primary);
+    & .msof-form-wrapper {
+      width: 100%;
+    }
+  }
+  &__form-file .msof-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    background: rgb(229, 238, 255);
+    width: 100%;
+  }
+  &__form-box > input[type='radio'] {
+    display: none;
+  }
+
+  &__delivery {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  &__form-box > input[type='radio']:checked + &__delivery {
+    border: 1px solid var(--color-primary);
+    background: rgb(229, 238, 255);
+  }
+  &__form-box > input[type='radio']:checked + &__delivery {
+    color: var(--color-primary);
+  }
+  &__delivery-icon {
+    margin-right: 40px;
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &__delivery-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: auto;
+  }
+  &__delivery-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__delivety-text {
+    font-size: 18px;
+    color: var(--color-text) !important;
+  }
+  &__delivery-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text) !important;
+  }
+  &__form-box > label:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__receipt {
+    position: sticky;
+    top: 10px;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--color-gray);
+  }
+  &__title-inner {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__info {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(168, 177, 188);
+  }
+  &__info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info-row + &__info-row {
+    margin-top: 20px;
+  }
+  &__info-row &__text {
+    width: 70%;
+  }
+  &__info-row &__price-inner {
+    width: 30%;
+  }
+  &__text {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  &__price-inner {
+    font-size: 18px;
+    color: var(--color-primary);
+    text-align: right;
+    white-space: nowrap;
+  }
+  &__receipt &__total {
+    margin-bottom: 20px;
+  }
+  &__caption {
+    margin-top: 10px;
+    color: rgb(168, 177, 188);
+    font-size: 18px;
+    text-align: center;
+  }
+}
+#msOrder .error + span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ff484d;
+}
+#msOrder .error {
+  border: 1px solid #ff484d;
 }

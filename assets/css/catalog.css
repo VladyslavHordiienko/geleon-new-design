@@ -17,6 +17,7 @@
   display: inline-block;
   font-size: 18px;
   color: var(--color-primary);
+  margin-top: 7px;
   margin-left: 20px;
 }
 .catalog__tabs {
