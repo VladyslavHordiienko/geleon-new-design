@@ -53,6 +53,8 @@
   display: block;
   width: auto;
   height: 120px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .popular__name {
   font-weight: 600;
@@ -133,6 +135,8 @@
   width: auto;
   height: 190px;
   margin: 0 auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .product__hero .swiper-pagination {
   bottom: 6px;
@@ -228,18 +232,103 @@
   width: 60%;
   margin-right: 40px;
 }
-.home-about__title {
+.home-about__textbox {
+  height: 550px;
+  overflow: hidden;
+}
+.home-about__textbox.active {
+  height: auto;
+}
+.home-about__textbox h1 {
   font-size: 24px;
   font-weight: 600;
   color: var(--color-primary);
   margin-bottom: 16px;
 }
-.home-about__text {
+.home-about__textbox h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 16px 0;
+}
+.home-about__textbox p {
   font-size: 18px;
 }
-.home-about__content > p:not(:last-child) {
+.home-about__textbox p:not(:last-child) {
   margin-bottom: 24px;
+}
+.home-about__btn {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 .home-about__img {
   width: 40%;
+}
+
+@media (max-width: 1280px) {
+  .select-us__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .select-us__img {
+    width: 70%;
+  }
+}
+@media (max-width: 1024px) {
+  .home-banner__huge {
+    width: 100%;
+  }
+  .home-banner__benefits {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .select-us__item {
+    padding: 24px;
+    padding-bottom: 80px;
+  }
+  .select-us__img {
+    width: 90%;
+  }
+  .select-us__text {
+    max-width: 80%;
+  }
+  .home-about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .home-about__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home-about__content {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  .select-us__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .select-us__item {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .popular__name {
+    text-align: center;
+  }
+  .product__name {
+    font-size: 16px;
+  }
+  .select-us__content {
+    grid-template-columns: 1fr;
+  }
+  .select-us__img {
+    width: 50%;
+  }
 }

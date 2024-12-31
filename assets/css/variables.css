@@ -8,3 +8,16 @@
   --title-size: 36px;
   --title-margin-bottom: 24px;
 }
+
+@media (max-width: 1024px) {
+  :root {
+    --section-margin-bottom: 30px;
+    --title-size: 28px;
+    --title-margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --title-size: 24px;
+  }
+}

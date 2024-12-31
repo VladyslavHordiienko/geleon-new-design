@@ -53,17 +53,69 @@ document.addEventListener('DOMContentLoaded', function () {
       swiper: swiperSide,
     },
     watchOverflow: true,
-    breakpoints: {
-      280: {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
-          dynamicBullets: true,
-        },
-      },
+    pagination: {
+      el: '.card__main-slider .swiper-pagination',
     },
   });
+  const sliderSettings = {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      374: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      769: {
+        slidesPerView: 4,
+      },
+    },
+  };
+  let swiperInstances = {};
+  const checkSlider = (node, className) => {
+    const isMobile = $(window).width() <= 1024;
+    if (isMobile && !swiperInstances[node]) {
+      $(`.${node} > div`).addClass('swiper-wrapper');
+      $(`.${node} > div`).removeClass(className);
+      swiperInstances[node] = new Swiper(`.${node}`, sliderSettings);
+      console.log('Swiper инициализирован');
+    } else if (!isMobile && swiperInstances[node]) {
+      $(`.${node} > div`).removeClass('swiper-wrapper');
+      $(`.${node} > div`).addClass(className);
+      swiperInstances[node].destroy(true, true);
+      swiperInstances[node] = null;
+      console.log('Swiper уничтожен');
+    }
+  };
+
+  // Функция debounce
+  function debounce(func, wait) {
+    let timeout;
+    return function () {
+      const context = this;
+      const args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+        func.apply(context, args);
+      }, wait);
+    };
+  }
+
+  $(window).resize(
+    debounce(function () {
+      checkSlider('popular__products', 'popular__grid');
+      checkSlider('hit__products', 'product__grid');
+      checkSlider('recently__products', 'product__grid');
+      checkSlider('recommend__products', 'product__grid');
+    }, 200),
+  );
+  checkSlider('popular__products', 'popular__grid');
+  checkSlider('hit__products', 'product__grid');
+  checkSlider('recently__products', 'product__grid');
+  checkSlider('recommend__products', 'product__grid');
   // END Sliders init
 
   // TABS in CARD page
@@ -117,4 +169,49 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.header__cart').click(function () {
     $('.cart-popup').fadeIn('slow');
   });
+  // Header catalog
+  $('.header__catalog-tab').each(function (i) {
+    $(this).click(function () {
+      $('.header__catalog-tab').each(function (j) {
+        i === j ? $(this).addClass('active') : $(this).removeClass('active');
+      });
+      $('.header__catalog-mobile').each(function (j) {
+        i === j ? $(this).addClass('active') : $(this).removeClass('active');
+      });
+    });
+  });
+  $('.header__catalog-cancel').click(function () {
+    $('.header__catalog').removeClass('active');
+  });
+  $('.header__catalog-btn').click(function () {
+    if ($('body').width() <= 768) {
+      $('.header__catalog').addClass('active');
+    }
+  });
+  $('.header__catalog-list > li').click(function (e) {
+    if ($('body').width() <= 768) {
+      $(this).toggleClass('active');
+      $(this).find('.header__submenu').slideToggle('slow');
+    }
+  });
+  $('.header__catalog-label').click(function (e) {
+    if ($('body').width() <= 768) {
+      e.preventDefault();
+    }
+  });
+  // Replace price block in Card page
+  replacePriceBlock();
+  if (document.querySelector('.card__content')) {
+    window.addEventListener('resize', replacePriceBlock);
+  }
+
+  function replacePriceBlock() {
+    if ($(window).width() <= 1024) {
+      var prodForm = $('.card-price-cell').detach();
+      $('.card__main').after(prodForm);
+    } else {
+      var prodForm = $('.card-price-cell').detach();
+      $('.card__info').prepend(prodForm);
+    }
+  }
 });

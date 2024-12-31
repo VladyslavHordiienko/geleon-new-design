@@ -27,6 +27,7 @@
     font-size: 18px;
     color: #fff !important;
     svg {
+      min-width: 24px;
       width: 24px;
       height: 24px;
     }
@@ -86,6 +87,7 @@
     align-items: center;
     color: #fff !important;
     svg {
+      min-width: 24px;
       width: 24px;
       height: 24px;
     }
@@ -117,5 +119,80 @@
   &__copyright {
     font-size: 18px;
     color: #3d464d;
+  }
+}
+@media (max-width: 1280px) {
+  .footer {
+    &__title-inner {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    &__menu + &__menu {
+      max-width: 440px;
+      margin-left: 40px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 0;
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    &__menu {
+      max-width: 100%;
+    }
+    &__menu + &__menu {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    &__bottom {
+      display: block;
+    }
+    &__politic {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    &__content {
+      grid-template-columns: 1fr;
+    }
+    &__contact-link {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 15px;
+    }
+    &__input {
+      font-size: 16px;
+    }
+    &__social-list {
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    &__social-item {
+      width: calc(100% / 3 - 16px);
+      margin: 0 !important;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    &__social-item {
+      width: calc(100% / 2 - 16px);
+    }
+    &__input {
+      font-size: 14px;
+    }
   }
 }

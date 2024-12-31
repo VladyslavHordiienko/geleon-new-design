@@ -194,6 +194,7 @@ body.hidden {
   }
   &__item {
     position: relative;
+    white-space: nowrap;
     font-size: 14px;
     font-weight: 600;
     @media (hover: hover) {
@@ -327,6 +328,38 @@ body.hidden {
     padding-top: 0;
   }
 }
+.qty-counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-black);
+  border-radius: 13px;
+  background-color: var(--color-gray);
+}
+.qty-counter__oper {
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+.qty-counter__input {
+  width: calc(100% - 100px);
+  font-size: 18px;
+  font-weight: 600;
+  height: 54px;
+  text-align: center;
+  border-left: 0.3px solid var(--color-black);
+  border-right: 0.3px solid var(--color-black);
+  background-color: var(--color-gray);
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -337,14 +370,13 @@ body.hidden {
     display: block;
   }
   &__body {
-    width: 100%;
+    width: 95vw;
     max-width: 768px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    margin: 16px;
     border-radius: 33px;
     padding: 20px 32px;
   }
@@ -362,5 +394,82 @@ body.hidden {
       width: 16px;
       height: 16px;
     }
+  }
+}
+@media (max-width: 1024px) {
+  .button {
+    text-align: center;
+    font-size: 16px;
+    height: 48px;
+    border-radius: 12px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  .popup {
+    &__body {
+      border-radius: 20px;
+      padding: 20px;
+    }
+  }
+  .breadcrumbs {
+    &__favorite {
+      span {
+        display: none;
+      }
+    }
+    &__action + &__action {
+      margin-left: 20px;
+    }
+    &__print {
+      display: none;
+    }
+    &__copy {
+      svg {
+        min-width: 24px;
+      }
+      span {
+        margin-right: 4px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .breadcrumbs {
+    &__list {
+      padding-bottom: 10px;
+      overflow-y: auto;
+    }
+    &__list::-webkit-scrollbar-button {
+      display: none !important;
+    }
+    &__list::-webkit-scrollbar {
+      background-color: #d8dde3;
+      width: 7px;
+      height: 7px;
+      border-radius: 4px;
+    }
+
+    &__list::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: 4px;
+    }
+    &__info {
+      display: none;
+    }
+  }
+  .qty-counter__oper {
+    min-width: 40px;
+    font-size: 24px;
+  }
+  .qty-counter__input {
+    width: calc(100% - 80px);
+    font-size: 16px;
+    height: 48px;
   }
 }
