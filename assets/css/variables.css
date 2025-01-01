@@ -11,7 +11,7 @@
 
 @media (max-width: 1024px) {
   :root {
-    --section-margin-bottom: 30px;
+    --section-margin-bottom: 40px;
     --title-size: 28px;
     --title-margin-bottom: 20px;
   }

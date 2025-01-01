@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('./chunks/header.html')
+        <main class="main">
+            <div class="payment">
+                <div class="container">
+                    <div class="payment__text">
+                        Компания «Гелеон» работает только с Юридическими лицами и только по безналичному расчету.
+                    </div>
+                    <div class="payment__cells">
+                        <div class="payment__cell">
+                            <div class="payment__step">
+                                01.
+                            </div>
+                            <p class="payment__text">
+                                После оформления заказа на сайте или по тел. (812) 952-72-49 вы отправляете реквизиты
+                                вашей организации удобным для вас способом. В ответ мы предоставим вам счет с (НДС).
+                                Счет действителен в течение 3-х банковских дней.
+                            </p>
+                        </div>
+                        <div class="payment__cell">
+                            <div class="payment__step">
+                                02.
+                            </div>
+                            <p class="payment__text">
+                                По факту поступления средств на расчетный счет менеджер свяжется с вами и договорится об
+                                удобном времени доставки товара или самовывозе с нашего склада.
+                            </p>
+                        </div>
+                        <div class="payment__cell">
+                            <div class="payment__step">
+                                03.
+                            </div>
+                            <p class="payment__text">
+                                При получении товара необходимо заверить наш экземпляр УПД (Универсальный передаточный
+                                документ) печатью организации плательщика или предоставить оригинал доверенности
+                                организации плательщика.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('./chunks/footer.html')
+        @@include('./chunks/cart-popup.html')
+</body>
+@@include('./chunks/svgsprites.html')
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

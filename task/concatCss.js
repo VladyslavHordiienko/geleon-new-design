@@ -12,6 +12,7 @@ module.exports = function concatCss() {
     './assets/css/card.css',
     './assets/css/catalog.css',
     './assets/css/cart.css',
+    './assets/css/custome-pages.css',
   ];
   return src(source, { allowEmpty: true }).pipe(concat('main.css')).pipe(dest('./assets/css/'));
 };

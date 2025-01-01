@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('./chunks/header.html')
+        <main class="main">
+            <div class="delivery">
+                <div class="container">
+                    <div class="delivery__cells">
+                        <div class="delivery__cell">
+                            <div class="delivery__head">
+                                <svg class="icon">
+                                    <use xlink:href="#box-icon"></use>
+                                </svg>
+                                <span>Самовывоз (бесплатно)</span>
+                            </div>
+                            <div class="delivery__body">
+                                <div class="delivery__info">
+                                    <div class="delivery__info-item">
+                                        <strong>Адрес склада:</strong>
+                                        <p>Ленинградская обл., г. Гатчина ул. 7 Армии, д. 10В</p>
+                                    </div>
+                                    <div class="delivery__info-item">
+                                        <strong>Время работы склада:</strong>
+                                        <ul>
+                                            <li>Пн-Чт с 9:00 до 17:00</li>
+                                            <li>Пт: с 9:00 до 16:00</li>
+                                            <li>Сб-Вс: Выходные дни</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="delivery__textbox">
+                                    <span>Обратите внимание</span>
+                                    <p>Товар можно забрать самостоятельно по предварительному согласованию с
+                                        менеджером. При получении Товара покупатель
+                                        должен предоставить: доверенность или печать своей организации.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__cell">
+                            <div class="delivery__head">
+                                <svg class="icon">
+                                    <use xlink:href="#delivery"></use>
+                                </svg>
+                                <span>Доставка по Санкт-Петербургу</span>
+                            </div>
+                            <div class="delivery__body">
+                                <div class="delivery__text">
+                                    <p>Бесплатная доставка негабаритного груза по Санкт-Петербургу в пределах (КАД) при
+                                        заказе от 25 000₽</p>
+                                    <strong>При заказе до 25 000₽ доставка будет платная — 1500₽</strong>
+                                </div>
+                                <div class="delivery__textbox">
+                                    <span>Обратите внимание</span>
+                                    <p>Доставка товара осуществляется непосредственно до склада заказчика. Разгрузка
+                                        осуществляется силами покупателя. Если у вас на территорию, пропускная система,
+                                        платный въезд, пожалуйста, сообщите об этом менеджеру и закажите пропуск
+                                        заранее.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__cell">
+                            <div class="delivery__head">
+                                <svg class="icon">
+                                    <use xlink:href="#delivery"></use>
+                                </svg>
+                                <span>По Ленинградской области</span>
+                            </div>
+                            <div class="delivery__body">
+                                <div class="delivery__text">
+                                    <p>Доставка товара по Ленинградской области рассчитывается индивидуально.</p>
+                                    <p>Стоимость доставки зависит от адреса доставки, количества заказанной продукции ее
+                                        веса и объема.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__cell">
+                            <div class="delivery__head">
+                                <svg class="icon">
+                                    <use xlink:href="#delivery"></use>
+                                </svg>
+                                <span>Доставка по России</span>
+                            </div>
+                            <div class="delivery__body">
+                                <div class="delivery__text">
+                                    <p>Доставку в регионы мы осуществляем транспортными компаниями на их условиях и по
+                                        их тарифам.</p>
+                                    <p>Доставка до ТК в Санкт-Петербурге при заказе от 25 000₽ — бесплатно.</p>
+                                    <strong>При заказе до 25 000₽ доставка будет платная — 1500₽</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('./chunks/footer.html')
+        @@include('./chunks/cart-popup.html')
+</body>
+@@include('./chunks/svgsprites.html')
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
