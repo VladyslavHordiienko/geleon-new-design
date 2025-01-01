@@ -176,6 +176,7 @@
   &__price {
     font-size: 24px;
     font-weight: 600;
+    white-space: nowrap;
     color: var(--color-primary);
     margin-left: auto;
   }
@@ -328,9 +329,20 @@
     background-color: var(--color-gray);
   }
   &__title-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
+
+    svg {
+      transition: all 0.3s ease;
+      display: none;
+      width: 18px;
+      height: 18px;
+      transform: rotate(90deg);
+    }
   }
   &__info {
     padding-bottom: 20px;
@@ -380,8 +392,13 @@
 #msOrder .error {
   border: 1px solid #ff484d;
 }
+
 @media (max-width: 1024px) {
   .cart {
+    &__main {
+      width: 100%;
+      margin-right: 0;
+    }
     &__cell {
       padding: 16px;
       border-radius: 20px;
@@ -396,6 +413,39 @@
     }
     &__name {
       font-size: 16px;
+    }
+    &__price {
+      font-size: 20px;
+    }
+    &__receipt {
+      width: 100%;
+      position: fixed;
+      top: unset;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px;
+      z-index: 9999;
+      border-radius: 24px 24px 0 0;
+    }
+    &__title-inner {
+      svg {
+        display: block;
+      }
+    }
+    &__title-inner.active {
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+    & &__total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 0;
+    }
+    &__info {
+      display: none;
     }
   }
 }
@@ -421,14 +471,41 @@
     }
     &__price-caption {
       white-space: nowrap;
-      margin-left: 16px;
+      margin-left: 6px;
       span {
-        font-size: 16px;
+        font-size: 14px;
+        margin-left: 3px;
       }
     }
     &__price {
       white-space: nowrap;
       font-size: 20px;
+    }
+    &__delivery {
+      padding: 20px;
+    }
+    &__delivery-icon {
+      margin-right: 10px;
+      svg {
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &__delivery-name {
+      font-size: 18px;
+    }
+    &__delivery-textbox {
+      gap: 4px;
+    }
+    &__delivety-text {
+      font-size: 16px;
+    }
+    &__delivery-price {
+      font-size: 16px;
+    }
+    &__caption {
+      display: none;
     }
   }
 }
@@ -441,6 +518,9 @@
       grid-template-rows: repeat(2, 1fr);
       gap: 10px;
     }
+    & &__action-row {
+      max-width: 100%;
+    }
     &__product-info > div:first-child {
       margin-bottom: 16px;
     }
@@ -452,6 +532,28 @@
     }
     &__price-small {
       font-size: 18px;
+    }
+    &__inputs {
+      flex-direction: column;
+      gap: 0;
+    }
+    &__input-wrap {
+      width: 100%;
+    }
+    &__form-file {
+      font-size: 16px;
+    }
+    &__receipt {
+      border-radius: 0;
+    }
+    &__title-inner {
+      font-size: 18px;
+    }
+    &__receipt &__total-price {
+      font-size: 18px;
+    }
+    &__receipt &__text {
+      font-size: 16px;
     }
   }
 }
@@ -467,6 +569,18 @@
     &__total-price {
       white-space: nowrap;
       font-size: 24px;
+    }
+    & &__price-info:has(.cart__price-caption) {
+      margin-left: -70px;
+    }
+    &__form-box {
+      padding: 24px 16px;
+    }
+    &__form-file {
+      font-size: 14px;
+    }
+    &__delivety-text {
+      font-size: 14px;
     }
   }
 }
@@ -494,11 +608,39 @@
     }
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .cart {
     &__product {
       min-width: 305px;
       overflow-y: auto;
+    }
+    &__product::-webkit-scrollbar-button {
+      display: none !important;
+    }
+    &__product::-webkit-scrollbar {
+      background-color: #d8dde3;
+      width: 7px;
+      height: 7px;
+      border-radius: 4px;
+    }
+
+    &__product::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      border-radius: 4px;
+    }
+    &__delivery {
+      padding: 16px;
+    }
+    &__delivery-name {
+      font-size: 16px;
+    }
+    &__delivery-icon svg {
+      min-width: 28px;
+      width: 28px;
+      height: 28px;
+    }
+    &__delivery-price {
+      font-size: 14px;
     }
   }
 }
